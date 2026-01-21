@@ -18,3 +18,6 @@ class TestStringOps(unittest.TestCase):
     self.assertEqual(capitalize_words("python programming"), "Python Programming")
 if __name__ == '__main__':
     unittest.main()
+def test_capitalize_words_failing(self):
+    """Test the capitalize_words function."""
+    self.assertEqual(capitalize_words("summer"), "summer")
