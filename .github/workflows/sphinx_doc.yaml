@@ -30,5 +30,8 @@ jobs:
           make html
 
       - name: Deploy with ghp-import
+        env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           ghp-import -n -p -f docs/build/html
+    
